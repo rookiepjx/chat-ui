@@ -1,5 +1,7 @@
+@import url("./index.css");
 .row{
   display: flex;
+  align-items: center;
 }
 .row > *{
   margin: 10px;

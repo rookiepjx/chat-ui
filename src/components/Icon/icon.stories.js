@@ -3,7 +3,10 @@ import Icon from ".";
 
 import "story.css";
 
-import { ReactComponent as smileIcon } from "assets/icon/smile.svg";
+import { ReactComponent as smileIcon} from "assets/icon/smile.svg";
+import { ReactComponent as usersIcon } from "assets/icon/users.svg";
+import { ReactComponent as waveIcon } from "assets/icon/wave.svg";
+import { ReactComponent as callIcon } from "assets/icon/call.svg";
 import { faCommentDots } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -14,7 +17,16 @@ export default {
 	component: Icon,
 };
 
-export const Default = () => <Icon icon={smileIcon} />;
+export const Default = () => {
+	return (
+		<div className="row">
+			<Icon icon={smileIcon} />
+			<Icon icon={usersIcon} color="purple" />
+			<Icon icon={waveIcon} width={100} color="red" />
+			<Icon icon={callIcon} />
+		</div>
+	);
+}
 
 export const Sizes = () => {
 	return (

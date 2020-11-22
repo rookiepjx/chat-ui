@@ -12,7 +12,7 @@ const AvatarMixinFunc = (color,iconSize = "8px") => css`
 `;
 
 // 头像容器
-export const AvatarWrapper = styled.div`
+export const StyledAvatar = styled.div`
 	position: relative;
 `;
 

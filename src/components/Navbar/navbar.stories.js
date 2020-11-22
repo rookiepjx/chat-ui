@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from ".";
 import { MenuItem } from ".";
 
-// 引入marcos插件
+// 引入macro插件
 import "styled-components/macro"
 
 export default {
@@ -11,7 +11,7 @@ export default {
 	component: Navbar,
 };
 
-export const Default = () => <Navbar>默认</Navbar>;
+export const Default = () => <Navbar showBadge/>
 
 export const Menu = () => {
   return (
@@ -21,7 +21,7 @@ export const Menu = () => {
         width:100px
 			`}
 		>
-			<MenuItem active showBadge icon={faCommentDots} />
+			<MenuItem active="true" showBadge icon={faCommentDots} />
 		</div>
 	);
 };

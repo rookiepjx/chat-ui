@@ -36,7 +36,7 @@ const variants = {
 	`,
 };
 
-export const BadgeWrapper = styled.div`
+export const StyledBadge = styled.div`
 	display: inline-block;
 	${({ variant }) => variants[variant]}
 `;

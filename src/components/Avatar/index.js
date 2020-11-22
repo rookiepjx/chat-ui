@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { AvatarWrapper, AvatarClip, AvatarImage, StatusIcon } from "./style";
+import { StyledAvatar, AvatarClip, AvatarImage, StatusIcon } from "./style";
 
 function Avatar({src,size = "48px",status,iconSize = "8px",...props}) {
 	return (
-		<AvatarWrapper {...props}>
+		<StyledAvatar {...props}>
 			{status && <StatusIcon status={status} iconSize={iconSize}/>}
 			<AvatarClip size={size}>
 				<AvatarImage src={src}/>
 			</AvatarClip>
-		</AvatarWrapper>
+		</StyledAvatar>
 	);
 }
 

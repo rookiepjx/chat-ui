@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { BadgeWrapper,Count } from "./style";
+import { StyledBadge,Count } from "./style";
 
 function Badge({
 	children,
 	count = 0,
-	show = true,
+	show = false,
 	showZero = true,
   bgc = "#F34848",
   size = "normal",
 	...prop
 }) {
 	return (
-		<BadgeWrapper
+		<StyledBadge
 			variant={children ? "dot" : "default"}
 			count={count}
 			show={show}
@@ -22,7 +22,7 @@ function Badge({
 			{...prop}
 		>
 			{children || <Count>{count}</Count>}
-		</BadgeWrapper>
+		</StyledBadge>
 	);
 }
 

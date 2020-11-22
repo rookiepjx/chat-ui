@@ -5,4 +5,5 @@ export default {
 	red: "#F34848",
 	orange:"#E6A23C",
 	normal: "1.4rem",
+	darkPurple:"#292F4C"
 };

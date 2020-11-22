@@ -4,11 +4,11 @@ to: src/components/<%= name %>/index.js
 
 import React from "react";
 import PropTypes from "prop-types";
-import {Styled<%= name %>} from "./style";
+import Styled<%= name %> from "./style";
 
-function <%= name %>({children,...prop}) {
+function <%= name %>({children,...props}) {
   return (
-    <Styled<%= name %> {...prop}>
+    <Styled<%= name %> {...props}>
       {children}
     </Styled<%= name %>>
   );

@@ -7,7 +7,7 @@ import { MenuItem } from ".";
 import "styled-components/macro"
 
 export default {
-	title: "UI组件/Navbar",
+	title: "页面组件/Navbar",
 	component: Navbar,
 };
 

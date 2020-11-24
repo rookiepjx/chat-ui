@@ -8,8 +8,8 @@ function Text({ children, type = "primary", size = "normal", bold, ...props }) {
 
 Text.propTypes = {
 	children: PropTypes.any,
-	type: PropTypes.oneOf("primary", "secondary", "danger"),
-	size: PropTypes.oneOf(
+	type: PropTypes.oneOf(["primary", "secondary", "danger"]),
+	size: PropTypes.oneOf([
 		"xxsmall",
 		"xsmall",
 		"small",
@@ -17,7 +17,7 @@ Text.propTypes = {
 		"medium",
 		"large",
 		"xlarge",
-		"xxlarge"
+		"xxlarge"]
 	),
 	bold: PropTypes.bool,
 };

@@ -11,7 +11,7 @@ const StyledSelect = styled.select`
   background-position:right center;
   background-repeat:no-repeat;
   background-color:transparent;
-  padding-right:14px;
+  padding-right:16px;
   border:none;
   font-size:${({theme}) => theme.normal};
   color:${({theme}) => theme.grayDark};

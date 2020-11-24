@@ -12,7 +12,7 @@ function Button({children,bgColor="#fff",shape="rect",type="default",size="30px"
 
 Button.propTypes = {
   children: PropTypes.any,
-  shape:PropTypes.oneOf("rect","circle"),
+  shape:PropTypes.oneOf(["rect","circle"]),
   type:PropTypes.oneOf(["default","primary","success","danger","info","warn"]),
   size:PropTypes.string,
   bgColor:PropTypes.string

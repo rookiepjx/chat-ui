@@ -40,6 +40,21 @@ const UnreadBadge = styled(Badge).attrs({ size: "mini" })`
 
 const StyledMessageCard = styled.div`
 	${card()};
+	${({ active }) =>
+		active &&
+		css`
+		${activeBar({ barWidth: "4px", shadowWidth: "14px" })}
+      background-color:${({ theme }) => theme.darkPurple};
+      ${Name},${Time},${StatusText},${MessageText}{
+        color:#fff;
+      }
+      ${StatusText},${Time}{
+        opacity:.4;
+      }
+      
+      overflow:hidden;
+  `}
+
 	display: grid;
 	grid-template-areas:
 		"avatar name time"
@@ -50,25 +65,11 @@ const StyledMessageCard = styled.div`
 	transition: 0.2s;
 	&:hover {
 		box-shadow: 0 22px 48px 0 rgba(0, 0, 0, 0.1);
-  }
-  
+	}
+
 	${StyledAvatar} {
 		grid-area: avatar;
-  }
-  
-	${({ active }) =>
-		active &&
-		css`
-      background-color:${({ theme }) => theme.darkPurple};
-      ${Name},${Time},${StatusText},${MessageText}{
-        color:#fff;
-      }
-      ${StatusText},${Time}{
-        opacity:.4;
-      }
-      ${activeBar({ barWidth: "4px", shadowWidth: "14px" })}
-      overflow:hidden;
-  `}
+	}
 `;
 
 export default StyledMessageCard;

@@ -17,6 +17,6 @@ export default {
 	small:"1.2rem",
 	xsmall:"1rem",
 	xxsmall:"0.88rem",
-	inactiveColor:"rgba(41,47,76,03",
+	inactiveColor:"rgba(41,47,76,.3)",
 	inactiveColorDark:"white"
 };

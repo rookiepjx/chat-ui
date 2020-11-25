@@ -48,6 +48,7 @@ export const Replied = () => (
 
 export const RepliedInactive = () => (
 	<MessageCard
+		replied
 		avatarSrc={face1}
 		avatarStatus="online"
 		name="彭佳鑫"
@@ -55,7 +56,5 @@ export const RepliedInactive = () => (
 		time="3 小时前"
 		message="湖人总冠军"
 		unreadCount={2}
-		replied
-		active
 	/>
 );

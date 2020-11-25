@@ -10,6 +10,9 @@ import {
 	StatusText,
 } from "./style";
 import Avatar from "components/Avatar";
+import Icon from "components/Icon";
+import { useTheme } from "styled-components";
+import { ReactComponent as Replied } from "assets/icon/replied.svg";
 
 function MessageCard({
 	children,
@@ -24,13 +27,24 @@ function MessageCard({
 	replied,
 	...props
 }) {
+	const theme = useTheme();
 	return (
 		<StyledMessageCard active={active} {...props}>
 			<Avatar src={avatarSrc} status={avatarStatus} />
 			<Name>{name}</Name>
-			<StatusText>{StatusText}</StatusText>
 			<Time>{time}</Time>
-			<Message>
+			<StatusText>{statusText}</StatusText>
+			<Message replied={replied}>
+				{replied && (
+					<Icon
+						icon={Replied}
+						width={14}
+						height={14}
+						color={active ? theme.inactiveColorDark : theme.inactiveColor}
+						opacity={active ? 0.4 : 1}
+						style={{ justifyContent: "start" }}
+					/>
+				)}
 				<MessageText>{message}</MessageText>
 				<UnreadBadge count={unreadCount} />
 			</Message>

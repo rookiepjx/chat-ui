@@ -1,4 +1,5 @@
 export default {
+	white:"#fff",
 	primaryColor: "#4F9DDE",
 	green: "#34D859",
 	gray: "rgba(24, 28, 47, .2)",
@@ -15,5 +16,7 @@ export default {
 	xxlarge:"2.4rem",
 	small:"1.2rem",
 	xsmall:"1rem",
-	xxsmall:"0.88rem"
+	xxsmall:"0.88rem",
+	inactiveColor:"rgba(41,47,76,03",
+	inactiveColorDark:"white"
 };

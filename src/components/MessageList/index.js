@@ -21,6 +21,7 @@ function MessageList({children,...props}) {
           return (
             <MessageCard 
             key={index} 
+            name="彭佳鑫"
             active={index === 0} 
             replied={index % 2 ===0}
             avatarSrc={face1}

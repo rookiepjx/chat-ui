@@ -1,4 +1,5 @@
 import { StyledAvatar } from "components/Avatar/style";
+import { StyledIcon } from "components/Icon/style";
 import Badge from "components/Badge";
 import Paragraph from "components/Paragraph";
 import Text from "components/Text";
@@ -43,15 +44,14 @@ const StyledMessageCard = styled.div`
 	${({ active }) =>
 		active &&
 		css`
-		${activeBar({ barWidth: "4px", shadowWidth: "14px" })}
+		${activeBar({ barWidth: "4px", shadowWidth: "14px" })};
       background-color:${({ theme }) => theme.darkPurple};
       ${Name},${Time},${StatusText},${MessageText}{
         color:#fff;
-      }
+      };
       ${StatusText},${Time}{
         opacity:.4;
-      }
-      
+      }; 
       overflow:hidden;
   `}
 
@@ -65,6 +65,20 @@ const StyledMessageCard = styled.div`
 	transition: 0.2s;
 	&:hover {
 		box-shadow: 0 22px 48px 0 rgba(0, 0, 0, 0.1);
+		${activeBar({ barWidth: "4px", shadowWidth: "14px" })}
+      background-color:${({ theme }) => theme.darkPurple};
+      ${Name},${Time},${StatusText},${MessageText}{
+        color:#fff;
+      }
+      ${StatusText},${Time}{
+        opacity:.4;
+      }
+
+				${StyledIcon}{
+					color:${({theme}) => theme.inactiveColorDark};
+				}
+			
+      overflow:hidden;
 	}
 
 	${StyledAvatar} {

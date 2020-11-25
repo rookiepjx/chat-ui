@@ -41,7 +41,7 @@ function MessageCard({
 						width={14}
 						height={14}
 						color={active ? theme.inactiveColorDark : theme.inactiveColor}
-						opacity={active ? 0.4 : 1}
+						opacity={active ? 0.8 : 1}
 						style={{ justifyContent: "start" }}
 					/>
 				)}

@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {IconWrapper} from "./style";
+import { StyledIcon } from "./style";
 
 function Icon({icon:IconComponent,color,width = 24,height = 24,opacity,...prop}) {
   return (
-    <IconWrapper color={color} opacity={opacity} {...prop}>
+    <StyledIcon color={color} opacity={opacity} {...prop}>
       {IconComponent && <IconComponent width={width} height={height} />}
-    </IconWrapper>
+    </StyledIcon>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyledIcon } from "./style";
+import StyledIcon from "./style";
 
 function Icon({icon:IconComponent,color,width = 24,height = 24,opacity,...prop}) {
   return (

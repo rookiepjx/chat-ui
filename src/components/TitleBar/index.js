@@ -22,10 +22,10 @@ function TitleBar({
 		<StyledTitleBar {...props}>
 			<Avatar src={avatarSrc} status={avatarStatus} />
 			<Title>
-				<Text size="large">{name}</Text>
-				<Paragraph>
-					<Text type="secondary" size="small">{statusText}</Text>
-					<Text type="secondary" size="small"> • 最后阅读 {time}</Text>
+				<Paragraph size="large">{name}</Paragraph>
+				<Paragraph type="secondary">
+					<Text>{statusText}</Text>
+					<Text> • 最后阅读 {time}</Text>
 				</Paragraph>
 			</Title>
 			<Actions>

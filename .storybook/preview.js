@@ -3,11 +3,16 @@ import {addDecorator,addParameters} from "@storybook/react"
 import {ThemeProvider} from "styled-components"
 import theme from "../src/theme"
 
-// 添加主题
+// 方便添加主题色
 addDecorator((storyFn => (
   <ThemeProvider theme={theme}>
     {storyFn()}
   </ThemeProvider>
+)))
+
+// 添加预览窗口内边距
+addDecorator((storyFn => (
+<div style={{padding:"20px"}}>{storyFn()}</div>
 )))
 
 // 修改侧边栏显示方式

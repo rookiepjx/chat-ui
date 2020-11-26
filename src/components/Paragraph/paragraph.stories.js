@@ -4,6 +4,7 @@ import Paragraph from ".";
 export default {
 	title: "排版组件/Paragraph",
 	component: Paragraph,
+	decorators: [(storyFn) => <div style={{ padding: "10px" }}>{storyFn()}</div>],
 };
 
 export const Default = () => (

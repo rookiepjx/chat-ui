@@ -1,5 +1,5 @@
-import { StyledAvatar } from "components/Avatar/style";
-import { StyledIcon } from "components/Icon/style";
+import StyledAvatar from "components/Avatar/style";
+import StyledIcon from "components/Icon/style";
 import Badge from "components/Badge";
 import Paragraph from "components/Paragraph";
 import Text from "components/Text";

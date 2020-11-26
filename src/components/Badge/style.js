@@ -36,7 +36,7 @@ const variants = {
 	`,
 };
 
-export const StyledBadge = styled.div`
+const StyledBadge = styled.div`
 	display: inline-block;
 	${({ variant }) => variants[variant]}
 `;
@@ -45,3 +45,5 @@ export const Count = styled.div`
 	font-size: ${({ theme }) => theme.normal};
 	color: #fff;
 `;
+
+export default StyledBadge

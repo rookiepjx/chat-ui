@@ -12,7 +12,7 @@ const AvatarMixinFunc = (color,iconSize = "8px") => css`
 `;
 
 // 头像容器
-export const StyledAvatar = styled.div`
+const StyledAvatar = styled.div`
 	position: relative;
 `;
 
@@ -55,3 +55,4 @@ export const StatusIcon = styled.div`
     }}
 	}
 `;
+export default StyledAvatar;

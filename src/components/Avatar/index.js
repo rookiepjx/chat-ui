@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { StyledAvatar, AvatarClip, AvatarImage, StatusIcon } from "./style";
+import StyledAvatar, {AvatarClip, AvatarImage, StatusIcon } from "./style";
 
 function Avatar({src,size = "48px",status,iconSize = "8px",...props}) {
 	return (

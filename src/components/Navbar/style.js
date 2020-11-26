@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { StyledAvatar } from "components/Avatar/style";
-import { StyledBadge } from "components/Badge/style";
+import  StyledAvatar  from "components/Avatar/style";
+import  StyledBadge from "components/Badge/style";
 import styled from "styled-components";
 import { activeBar } from "utils/mixins";
 

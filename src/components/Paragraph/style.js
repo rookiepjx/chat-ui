@@ -1,7 +1,7 @@
 import styled,{css} from "styled-components";
-import Text from "../Text/index";
+import StyledText from "../Text/style";
 
-const StyledParagraph = styled(Text)`
+const StyledParagraph = styled(StyledText)`
 	${({ ellipsis }) =>
 		ellipsis &&
 		css`

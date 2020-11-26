@@ -6,14 +6,14 @@ import StyledMessageBubble, {
 	BubbleTip,
 	Time,
 } from "./style";
-import { ReactComponent as plus } from "assets/icon/plus.svg";
+import { ReactComponent as bubbleTip } from "assets/icon/bubbleTip.svg";
 
 function MessageBubble({ children, type, time, ...props }) {
 	return (
 		<StyledMessageBubble type={type} {...props}>
 			<Bubble>
 				<MessageText>{children}</MessageText>
-				<BubbleTip icon={plus} width={40} height={40} color="black" />
+				<BubbleTip icon={bubbleTip} width={40} height={28} color="red" />
 			</Bubble>
 			<Time>{time}</Time>
 		</StyledMessageBubble>
@@ -22,7 +22,7 @@ function MessageBubble({ children, type, time, ...props }) {
 
 MessageBubble.propTypes = {
   children: PropTypes.any,
-  type:PropTypes.bool,
+  type:PropTypes.oneOf(["mine"]),
   time:PropTypes.string
 };
 

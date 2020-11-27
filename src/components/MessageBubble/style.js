@@ -1,5 +1,4 @@
 import Text from "components/Text/style";
-import Icon from "components/Icon/style";
 import Paragraph from "components/Paragraph/style";
 import styled,{css} from "styled-components";
 
@@ -7,7 +6,6 @@ const StyledMessageBubble = styled.div`
 	display: flex;
 	flex-direction: column;
 	${({ type }) => type && typeVariants[type]};
-  position:relative;
 `;
 
 const Bubble = styled.div`
@@ -15,16 +13,16 @@ const Bubble = styled.div`
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 	border-radius: 100px;
 	position: relative;
-	/* z-index: 20; */
+	z-index: 20;
 `;
 
 const MessageText = styled(Text).attrs({size:"normal"})``;
 
-const BubbleTip = styled(Icon)`
+const BubbleTip = styled.div`
   position: absolute;
   left:0;
-  bottom:-15%;
-  z-index:100;
+  bottom:-25%;
+  z-index:10;
 `;
 
 const Time = styled(Paragraph).attrs({

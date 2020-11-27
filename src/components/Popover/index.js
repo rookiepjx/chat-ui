@@ -34,11 +34,11 @@ function Popover({
 }
 
 Popover.propTypes = {
-  children: PropTypes.any,
-  onVisible:PropTypes.func,
-  onHide:PropTypes.func,
-  content:PropTypes.any,
-  offset:PropTypes.shape({x:PropTypes.string,y:PropTypes.string})
+	children: PropTypes.any,
+	onVisible: PropTypes.func,
+	onHide: PropTypes.func,
+	content: PropTypes.any,
+	offset: PropTypes.shape({ x: PropTypes.string, y: PropTypes.string }),
 };
 
 export default Popover;

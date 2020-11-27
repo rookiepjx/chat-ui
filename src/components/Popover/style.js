@@ -11,7 +11,7 @@ const Content = styled.div`
 	box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.12);
 	padding: 12px 30px;
   border-radius:100px;
-  bottom:calc(100% + 12px);
+  bottom:calc(100% + 14px);
   ${({visible}) => !visible && `display:none`};
   ${({offset}) => offset && `transform:translate(${offset.x || 0},${offset.y || 0})`}
 `;
@@ -24,7 +24,7 @@ const Triangle = styled.div`
 	border-width: 6px 6px 0 6px;
 	border-color: ${({ theme }) => theme.white} transparent transparent
 		transparent;
-	bottom: calc(100% + 12px - 6px);
+	bottom: calc(100% + 14px - 6px);
 	left: calc(50% - 6px);
 	${({ visible }) => !visible && `display:none`};
 	${({ offset }) =>

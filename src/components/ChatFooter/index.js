@@ -48,6 +48,7 @@ ChatFooter.propTypes = {
 
 function PopoverContent({color}){
   return (
+		/* eslint-disable jsx-a11y/accessible-emoji */
 		<StyledPopoverContent>
 			<Emoji>🤣</Emoji>
 			<Emoji>😎</Emoji>
@@ -55,7 +56,7 @@ function PopoverContent({color}){
 			<Emoji>😊</Emoji>
 			<Emoji>😋</Emoji>
 			<Emoji>🤑</Emoji>
-			<Icon icon={options} color={color}/>
+			<Icon icon={options} color={color} />
 		</StyledPopoverContent>
 	);
 }

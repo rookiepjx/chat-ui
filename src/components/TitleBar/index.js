@@ -8,24 +8,20 @@ import Icon from "components/Icon";
 import {ReactComponent as call} from "assets/icon/call.svg"
 import { ReactComponent as camera } from "assets/icon/camera.svg";
 import { ReactComponent as options } from "assets/icon/options.svg";
+import face1 from "assets/images/face-male-1.jpg";
 
 function TitleBar({
 	children,
-	avatarSrc,
-	avatarStatus,
-	name,
-	statusText,
-	time,
 	...props
 }) {
 	return (
 		<StyledTitleBar {...props}>
-			<Avatar src={avatarSrc} status={avatarStatus} />
+			<Avatar src={face1} status="offline" />
 			<Title>
-				<Paragraph size="large">{name}</Paragraph>
+				<Paragraph size="large">彭佳鑫</Paragraph>
 				<Paragraph type="secondary">
-					<Text>{statusText}</Text>
-					<Text> • 最后阅读 {time}</Text>
+					<Text>离线</Text>
+					<Text> • 最后阅读 3 小时前</Text>
 				</Paragraph>
 			</Title>
 			<Actions>
@@ -39,11 +35,7 @@ function TitleBar({
 
 TitleBar.propTypes = {
 	children: PropTypes.any,
-	avatarSrc: PropTypes.any,
-	avatarStatus: PropTypes.any,
-	name: PropTypes.string,
-	statusText: PropTypes.oneOf(["在线","离线"]),
-	time: PropTypes.string,
+
 };
 
 export default TitleBar;

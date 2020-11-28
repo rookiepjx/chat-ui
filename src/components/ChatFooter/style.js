@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledChatFooter = styled.div`
-  width:100%;
+	padding: 12px;
+	width: 100%;
 `;
 
 const IconContainer = styled.div`
@@ -22,4 +23,4 @@ const StyledPopoverContent = styled.div`
 `;
 
 export default StyledChatFooter;
-export { IconContainer,StyledPopoverContent };
+export { IconContainer, StyledPopoverContent };

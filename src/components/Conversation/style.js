@@ -20,6 +20,7 @@ const ConversationList = styled.div`
 	width:100%;
   flex:1;
 	& > * {
+		max-width: 80%;
 		margin: 10px 0;
 	}
 `;

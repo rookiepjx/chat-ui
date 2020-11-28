@@ -9,10 +9,13 @@ import { ReactComponent as clip } from "assets/icon/clip.svg";
 import { ReactComponent as microphone } from "assets/icon/microphone.svg";
 import { ReactComponent as smile } from "assets/icon/smile.svg";
 import { ReactComponent as plane } from "assets/icon/plane.svg";
+import { ReactComponent as options } from "assets/icon/options.svg";
 import {useTheme} from "styled-components"
 import Emoji from "components/Emoji";
+import { useState } from "react";
 function ChatFooter({ children, ...props }) {
-  const theme = useTheme()
+	const theme = useTheme()
+	const [emojiActive, setEmojiActive] = useState(false)
 	return (
 		<StyledChatFooter {...props}>
 			<Input
@@ -20,8 +23,13 @@ function ChatFooter({ children, ...props }) {
 				prefix={<Icon icon={clip} />}
 				suffix={
 					<IconContainer>
-						<Popover content={<PopoverContent/>} offset={{ x: "-20%" }}>
-							<Icon icon={smile} />
+						<Popover
+							content={<PopoverContent color={theme.gray} />}
+							offset={{ x: "-20%" }}
+							onVisible={() => setEmojiActive(true)}
+							onHide={() => setEmojiActive(false)}
+						>
+							<Icon icon={smile} color={emojiActive?"":theme.gray} />
 						</Popover>
 						<Icon icon={microphone} />
 						<Button type="primary" shape="circle" size="46px">
@@ -38,7 +46,7 @@ ChatFooter.propTypes = {
 	children: PropTypes.any,
 };
 
-function PopoverContent(){
+function PopoverContent({color}){
   return (
 		<StyledPopoverContent>
 			<Emoji>🤣</Emoji>
@@ -47,6 +55,7 @@ function PopoverContent(){
 			<Emoji>😊</Emoji>
 			<Emoji>😋</Emoji>
 			<Emoji>🤑</Emoji>
+			<Icon icon={options} color={color}/>
 		</StyledPopoverContent>
 	);
 }

@@ -22,6 +22,7 @@ import {
 	faGithub,
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { ReactComponent as Cross } from "assets/icon/cross.svg";
 import face1 from "assets/images/face-male-1.jpg";
 import photo1 from "assets/images/photo1.jpg";
 import photo2 from "assets/images/photo2.jpg";
@@ -97,9 +98,9 @@ function Profile({ children, status, ...props }) {
 					<Photo src={photo1} alt="" />
 					<Photo src={photo2} alt="" />
 					<Photo src={photo3} alt="" />
-					<Photo src={photo3} alt="" />
 				</Album>
 			</AlbumContainer>
+			<CloseIcon icon={Cross} />
 		</StyledProfile>
 	);
 }

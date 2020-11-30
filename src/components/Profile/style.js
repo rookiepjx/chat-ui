@@ -12,6 +12,7 @@ const StyledProfile = styled.div`
 	overflow-y: auto;
 	height: 100vh;
 	margin-top: 2vh;
+	border:1px solid ${({theme}) => theme.gray}
 `;
 
 const SocialLinks = styled.div`
@@ -26,7 +27,7 @@ const ContactSection = styled.section`
 
 // 相册容器
 const AlbumContainer = styled.section`
-	width: 264px;
+
 `;
 
 // 相册标题
@@ -51,23 +52,27 @@ const AlbumTitle = styled.div`
 // 相册图片容器
 const Album = styled.div`
 	margin-top: 20px;
+	width:100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	gap:10px;
 `;
 
 // 相册图片
 const Photo = styled.img`
-	width: 80px;
-	height: 80px;
+	width: 120px;
+	height: 120px;
 	object-fit: cover;
 	/* margin: 4px; */
 `;
+
 const CloseIcon = styled(Icon).attrs({ opacity: 0.3 })`
 	position: absolute;
 	right: 30px;
 	top: 30px;
 	cursor: pointer;
 `;
+
 export default StyledProfile;
 export {
 	SocialLinks,

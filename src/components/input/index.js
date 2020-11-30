@@ -7,6 +7,7 @@ import { Prefix, Suffix, InputContainer } from "./style";
 import {ReactComponent as SearchIcon} from "assets/icon/search.svg"
 import { useTheme } from "styled-components";
 import InputText from "./InputText";
+import InputIcon from "./InputIcon";
 
 function Input({ placeholder = "请输入内容", prefix, suffix, ...props }) {
 	return (
@@ -39,6 +40,7 @@ function Search({placeholder="请输入搜索内容",...props} = {}){
 
 Input.Search = Search
 Input.Text = InputText
+Input.Icon = InputIcon
 
 Input.propTypes = {
   placeholder:PropTypes.string,

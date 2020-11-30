@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import StyledIcon from "./style";
-
+import SocialLink from "./socialLink"
 function Icon({icon:IconComponent,color,width = 24,height = 24,opacity,...prop}) {
   return (
     <StyledIcon color={color} opacity={opacity} {...prop}>
@@ -17,5 +17,7 @@ Icon.propTypes = {
 	width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 	height: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 };
+
+Icon.Social = SocialLink
 
 export default Icon;

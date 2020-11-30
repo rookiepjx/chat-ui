@@ -16,3 +16,5 @@ export const Search = () => <Input.Search/>
 export const WithPrefix = () => <Input prefix={<Icon icon={clip}/>} />
 
 export const WithSuffix = () => <Input suffix={<Icon icon={search} />}/>;
+
+export const InputText = () => <Input.Text label="昵称"/>;

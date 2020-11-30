@@ -92,7 +92,7 @@ function Profile({ children, status, ...props }) {
 			<AlbumContainer>
 				<AlbumTitle>
 					相册(20)
-					<a href="#">查看全部</a>
+					<a href="/">查看全部</a>
 				</AlbumTitle>
 				<Album>
 					<Photo src={photo1} alt="" />

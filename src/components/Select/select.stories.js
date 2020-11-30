@@ -3,7 +3,7 @@ import Select from ".";
 import Option from "../Option/index"
 
 export default {
-  title: "UI组件/Input/Select",
+  title: "UI组件/Select",
   component: Select
 };
 

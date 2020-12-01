@@ -9,6 +9,7 @@ export default {
 	grayDark: "#181C2F",
 	darkPurple: "#292F4C",
 	red: "#F34848",
+	blue:"#409eff",
 	orange: "#E6A23C",
 	normal: "1.4rem",
 	medium: "1.6rem",

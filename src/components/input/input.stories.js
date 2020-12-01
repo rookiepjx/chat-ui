@@ -3,6 +3,7 @@ import {ReactComponent as search} from "assets/icon/search.svg"
 import Icon from "components/Icon";
 import React from "react";
 import Input from ".";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
@@ -22,4 +23,8 @@ export const WithSuffix = () => <Input suffix={<Icon icon={search} />}/>;
 
 export const InputText = () => <Input.Text label="昵称"/>;
 
-export const InputIcon = () => <Input.Icon/>;
+export const InputIcon = () => (
+					<Input.Icon placeholder="请输入内容">
+						<FontAwesomeIcon style={{fontSize:"24px"}} icon={faGithub} />
+					</Input.Icon>
+				);

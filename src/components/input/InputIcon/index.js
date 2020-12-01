@@ -2,14 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import StyledInputIcon from "./style";
 import {InputUnderline} from "../InputText/style"
-import Icon from "components/Icon";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-function InputIcon({children,icon,...props}) {
+function InputIcon({children,placeholder,...props}) {
   return (
 		<StyledInputIcon {...props}>
-			<Icon icon={faGithub} />
-			<InputUnderline />
+			{children}
+			<InputUnderline placeholder={placeholder}/>
 		</StyledInputIcon>
 	);
 }

@@ -22,20 +22,21 @@ const SwitchButton = styled.button`
 	border: none;
 	border-radius: 50%;
 	background: #fff;
-	box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.1),
+		0px 3px 1px rgba(0, 0, 0, 0.0510643);
 	cursor: pointer;
-	transition: all linear .2s;
+	transition: all linear 0.2s;
 	${({ active }) =>
 		!active &&
-    css`
+		css`
 			left: 26px;
-      &:active{
-       left:22px;
-      }
+			&:active {
+				left: 22px;
+			}
 		`};
-    &:active{
-      width:24px;
-    }
+	&:active {
+		width: 24px;
+	}
 `;
 
 export default StyledSwitch;

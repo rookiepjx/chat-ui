@@ -24,13 +24,12 @@ const SwitchButton = styled.button`
 	background: #fff;
 	box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	transition: .4s;
+	transition: all linear .2s;
 	${({ active }) =>
 		!active &&
     css`
 			left: 26px;
       &:active{
-
        left:22px;
       }
 		`};

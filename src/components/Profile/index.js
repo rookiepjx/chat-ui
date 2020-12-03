@@ -14,8 +14,11 @@ import Icon from "components/Icon";
 import Paragraph from "components/Paragraph";
 import Separator from "components/Separator";
 import Text from "components/Text";
+import Button from "components/Button";
 
 import "styled-components/macro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
 
 import {
 	faWeibo,
@@ -28,19 +31,45 @@ import photo1 from "assets/images/photo1.jpg";
 import photo2 from "assets/images/photo2.jpg";
 import photo3 from "assets/images/photo3.jpg";
 
-function Profile({ children, status, ...props }) {
+function Profile({
+	children,
+	status,
+	showClose,
+	showEditBtn,
+	onCloseClick,
+	onEdit,
+	...props
+}) {
 	return (
 		<StyledProfile {...props}>
+			{showClose && <CloseIcon icon={Cross} onClick={onCloseClick} />}
 			<Avatar
 				css={`
 					margin: 30px 0;
-					grid-area: 1 / 1 / 3 / 2;
+					grid-area: 1 / 1 / 2 / 2;
 				`}
 				src={face1}
 				size="160px"
 				iconSize="25px"
 				status={status}
 			/>
+			{showEditBtn && (
+				<Button
+					shape="circle"
+					bgColor="#4F9DDE"
+					size="52px"
+					css={`
+						grid-area: 1 / 1 / 2 / 2;
+						z-index: 10;
+						align-self:end;
+						position:relative;
+						left:50px;
+						bottom:20px;
+					`}
+				>
+					<FontAwesomeIcon color="white" icon={faEdit} onClick={onEdit} />
+				</Button>
+			)}
 			<Paragraph
 				css={`
 					margin-bottom: 12px;
@@ -100,7 +129,6 @@ function Profile({ children, status, ...props }) {
 					<Photo src={photo3} alt="" />
 				</Album>
 			</AlbumContainer>
-			<CloseIcon icon={Cross} />
 		</StyledProfile>
 	);
 }
@@ -115,6 +143,8 @@ function Description({ label, children }) {
 
 Profile.propTypes = {
 	children: PropTypes.any,
+	editable: PropTypes.bool,
+	showClose: PropTypes.bool,
 };
 
 export default Profile;

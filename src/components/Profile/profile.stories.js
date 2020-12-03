@@ -6,4 +6,4 @@ export default {
   component: Profile
 };
 
-export const Default = () => <Profile status="online"/>;
+export const Default = () => <Profile status="online" showClose/>;

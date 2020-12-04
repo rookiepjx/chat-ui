@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import StyledInputIcon from "./style";
 import {InputUnderline} from "../InputText/style"
 
-function InputIcon({children,placeholder,...props}) {
+function InputIcon({children,placeholder="请输入内容",...props}) {
   return (
 		<StyledInputIcon {...props}>
 			{children}

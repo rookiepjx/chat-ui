@@ -59,12 +59,12 @@ function Profile({
 					bgColor="#4F9DDE"
 					size="52px"
 					css={`
-						grid-area: 1 / 1 / 2 / 2;
+						grid-area: 1 / 1 / 3 / 2;
 						z-index: 10;
-						align-self:end;
 						position:relative;
 						left:50px;
-						bottom:20px;
+						bottom:14px;
+						align-self:end;
 					`}
 				>
 					<FontAwesomeIcon color="white" icon={faEdit} onClick={onEdit} />

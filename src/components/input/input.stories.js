@@ -24,7 +24,7 @@ export const WithSuffix = () => <Input suffix={<Icon icon={search} />}/>;
 export const InputText = () => <Input.Text label="昵称"/>;
 
 export const InputIcon = () => (
-					<Input.Icon placeholder="请输入内容">
+					<Input.Icon>
 						<FontAwesomeIcon style={{fontSize:"24px"}} icon={faGithub} />
 					</Input.Icon>
 				);

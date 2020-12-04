@@ -15,13 +15,13 @@ function SocialLink({ icon, bgColor, size = "30px", href, ...props }) {
 			<FontAwesomeIcon
 				icon={icon}
 				style={{ fontSize: "16px",color:"white" }}
-			></FontAwesomeIcon>
+			/>
 		</Button>
 	);
 }
 
 SocialLink.propTypes = {
-	icon: PropTypes.elementType,
+	icon: PropTypes.any,
 	bgColor: PropTypes.string,
 	size: PropTypes.string,
 	href: PropTypes.string,

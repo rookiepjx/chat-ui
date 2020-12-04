@@ -9,7 +9,7 @@ export default {
 export const Default = () => <Radio>选项</Radio>;
 
 export const RadioGroup = () => (
-					<Radio.Group>
+					<Radio.Group label="选择">
 						<Radio name="option">选项1</Radio>
 						<Radio name="option">选项2</Radio>
 						<Radio name="option">选项3</Radio>

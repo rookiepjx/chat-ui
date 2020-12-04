@@ -61,10 +61,10 @@ function Profile({
 					css={`
 						grid-area: 1 / 1 / 3 / 2;
 						z-index: 10;
-						position:relative;
-						left:50px;
-						bottom:14px;
-						align-self:end;
+						position: relative;
+						left: 50px;
+						bottom: 14px;
+						align-self: end;
 					`}
 				>
 					<FontAwesomeIcon color="white" icon={faEdit} onClick={onEdit} />
@@ -101,8 +101,16 @@ function Profile({
 					bgColor="#F06767"
 					href="http://www.weibo.com"
 				/>
-				<Icon.Social icon={faGithub} bgColor="black" />
-				<Icon.Social icon={faLinkedin} bgColor="#2483C0" />
+				<Icon.Social
+					icon={faGithub}
+					bgColor="black"
+					href="http://www.weibo.com"
+				/>
+				<Icon.Social
+					icon={faLinkedin}
+					bgColor="#2483C0"
+					href="http://www.weibo.com"
+				/>
 			</SocialLinks>
 			<Separator
 				css={`

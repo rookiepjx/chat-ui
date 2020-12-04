@@ -15,16 +15,21 @@ import Separator from "components/Separator";
 function Setting({ children, ...props }) {
 	return (
 		<StyledSetting {...props}>
-			<SettingItem
-				label="免密支付"
-				description="小额支付时免输入密码"
-			></SettingItem>
+			<SettingGroup title="账号设置">
+				<SettingItem
+					label="免密支付"
+					description="小额支付时免输入密码"
+				></SettingItem>
+				<SettingItem label="切换用户" type="menu" />
+			</SettingGroup>
 			<SettingGroup title="通用设置">
 				<SettingItem label="新消息通知" />
 				<SettingItem label="语音和视频通话提醒" />
 				<SettingItem label="显示通知详情" />
 				<SettingItem label="声音" />
-				<SettingItem label="切换用户" type="menu" />
+			</SettingGroup>
+			<SettingGroup title="隐私设置">
+				<SettingItem label="查看已屏蔽好友列表" type="menu"/>
 			</SettingGroup>
 		</StyledSetting>
 	);
@@ -33,7 +38,7 @@ function Setting({ children, ...props }) {
 function SettingGroup({ title, children, ...props }) {
 	return (
 		<StyledSettingGroup>
-			<Paragraph size="xlarge" style={{ paddingBottom: "24px" }}>
+			<Paragraph size="xlarge" style={{ paddingBottom: "12px" }}>
 				{title}
 			</Paragraph>
 			{children}

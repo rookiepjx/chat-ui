@@ -3,7 +3,7 @@ import styled from "styled-components";
 import StyledAvatar from "components/Avatar/style";
 import { card } from "utils/mixins";
 const StyledContactCard = styled.div`
-	${card}
+	${card()}
 	display: grid;
 	grid-template-areas:
 		"avatar name"

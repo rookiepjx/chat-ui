@@ -6,7 +6,7 @@ import Popover from "components/Popover";
 import { card } from "utils/mixins";
 
 const StyledFileCard = styled.div`
-	${card};
+	${card()};
 	display: grid;
 	grid-template-areas:
 		"icon name options"

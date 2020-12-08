@@ -7,7 +7,7 @@ import face6 from "assets/images/face-female-2.jpg";
 import face7 from "assets/images/face-female-3.jpg";
 import face8 from "assets/images/face-female-4.jpg";
 
-export default contactList = [
+export const contactList = [
 	{ name: "王俊凯", intro: "你好，我是王俊凯", avatar: face1 },
 	{ name: "王源", intro: "你好，我是王源", avatar: face2 },
 	{ name: "易烊千玺", intro: "你好，我是易烊千玺", avatar: face3 },

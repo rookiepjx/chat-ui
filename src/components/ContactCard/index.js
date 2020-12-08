@@ -14,7 +14,7 @@ function ContactCard({
 }) {
 	return (
 		<StyledContactCard {...props}>
-			<Avatar avatarSrc={avatarSrc} status={status} />
+			<Avatar src={avatarSrc} status={status} />
 			<Name>{name}</Name>
 			<Intro>{intro}</Intro>
 		</StyledContactCard>

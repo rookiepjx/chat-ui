@@ -17,3 +17,14 @@ export const contactList = [
 	{ name: "倪妮", intro: "你好，我是倪妮", avatar: face7 },
 	{ name: "金晨", intro: "你好，我是金晨", avatar: face8 },
 ];
+
+export const fileList = [
+	{name:"小组项目压缩文件",size:"5.2MB",type:"zip",time:"2020-12-01"},
+	{name:"魅力三亚",size:"5.2MB",type:"image",time:"2020-12-01"},
+	{name:"黄山日出",size:"5.2MB",type:"image",time:"2020-12-01"},
+	{name:"小组项目展示PPT",size:"5.2MB",type:"ppt",time:"2020-12-01"},
+	{name:"安全教育主题班会",size:"5.2MB",type:"ppt",time:"2020-12-01"},
+	{name:"2020年度三好学生名单",size:"5.2MB",type:"excel",time:"2020-12-01"},
+	{name:"期末项目答辩文稿",size:"5.2MB",type:"word",time:"2020-12-01"},
+	{name:"《JavaScript高级程序设计》",size:"5.2MB",type:"zip",pdf:"2020-12-01"},
+]

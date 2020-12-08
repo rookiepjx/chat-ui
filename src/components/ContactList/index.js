@@ -10,7 +10,7 @@ import { contactList } from "data/data";
 function ContactList({ children, ...props }) {
 	return (
 		<StyledContactList {...props}>
-			<FilterList options={["按名字排序"]} actionsLabel="新建联系人">
+			<FilterList options={["按名字排序","按状态排序"]} actionsLabel="新建联系人">
 				{contactList.map((item, index) => {
 					return (
             <ContactCard

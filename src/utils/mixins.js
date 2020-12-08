@@ -1,5 +1,6 @@
 import { css } from "styled-components";
 
+// 圆角效果
 export const circle = (color = "#F34848", size = "8px") => css`
 	width: ${size};
 	height: ${size};
@@ -7,6 +8,7 @@ export const circle = (color = "#F34848", size = "8px") => css`
 	background-color: ${color};
 `;
 
+// Navbar侧边栏渐变效果
 export const activeBar = ({
 	barWidth = "8px",
 	shadowWidth = "20px",
@@ -39,6 +41,7 @@ export const activeBar = ({
 	}
 `;
 
+// 卡片轮廓阴影
 export const card = (radius="6px",padding="20px 30px") => css`
 	padding:${padding};
 	background:${({theme}) => theme.white};

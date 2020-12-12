@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import StyledAvatar, {AvatarClip, AvatarImage, StatusIcon } from "./style";
 
-function Avatar({src,size = "48px",status="online",iconSize = "8px",...props}) {
+function Avatar({src,size = "48px",status,iconSize = "8px",...props}) {
 	return (
 		<StyledAvatar {...props}>
 			{status && <StatusIcon status={status} iconSize={iconSize}/>}

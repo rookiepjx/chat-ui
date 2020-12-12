@@ -1,4 +1,5 @@
 export default {
+	// 主题色
 	white: "#fff",
 	primaryColor: "#4F9DDE",
 	green: "#34D859",
@@ -13,6 +14,10 @@ export default {
 	red2: "rgba(236, 90, 81, 0.8)",
 	blue: "#409eff",
 	orange: "#E6A23C",
+	inactiveColor: "gray",
+	inactiveColorDark: "white",
+
+	// 字体大小
 	normal: "1.4rem",
 	medium: "1.6rem",
 	large: "1.8rem",
@@ -21,6 +26,4 @@ export default {
 	small: "1.2rem",
 	xsmall: "1rem",
 	xxsmall: "0.88rem",
-	inactiveColor: "gray",
-	inactiveColorDark: "white",
 };

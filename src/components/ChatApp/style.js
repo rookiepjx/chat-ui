@@ -10,7 +10,8 @@ const StyledChatApp = styled.div`
 
 const Nav = styled.nav`
 	flex-shrink: 0;
-	position: relative;
+  position: relative;
+
 `;
 
 const SideBar = styled.aside`

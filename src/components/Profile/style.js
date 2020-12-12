@@ -11,8 +11,8 @@ const StyledProfile = styled.div`
 	padding: 30px;
 	overflow-y: auto;
 	height: 100vh;
-	margin-top: 2vh;
-	border:1px solid ${({theme}) => theme.gray}
+	/* margin-top: 2vh; */
+	/* border:1px solid ${({theme}) => theme.gray} */
 `;
 
 const SocialLinks = styled.div`

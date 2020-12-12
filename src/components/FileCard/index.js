@@ -48,8 +48,8 @@ function FileCard({ children, fileType, size, time, name, ...props }) {
 function OptionsContent() {
 	return (
 		<OptionsContentWrapper>
-			<Paragraph size="10px">查看</Paragraph>
-			<Paragraph size="10px">删除</Paragraph>
+			<Paragraph size="small">查看</Paragraph>
+			<Paragraph size="small">删除</Paragraph>
 		</OptionsContentWrapper>
 	);
 }

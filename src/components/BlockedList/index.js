@@ -25,7 +25,7 @@ function BlockedList({children,...props}) {
       <FriendsList>
         {new Array(8).fill(0).map((user,index)=> {
           return (
-            <FriendItem>
+            <FriendItem key={index}>
               <BlockedAvatar size="100px" src={face}/>
               <BlockedName>李明</BlockedName>
               <CloseIcon width={50} height={50} icon={closeCircle} />

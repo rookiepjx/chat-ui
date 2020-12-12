@@ -22,7 +22,7 @@ function NoteCard({ children, name, time, content, image = note, ...props }) {
 
 NoteCard.propTypes = {
 	children: PropTypes.any,
-	image: PropTypes.string.isRequired,
+	image: PropTypes.string,
 	name: PropTypes.string,
 	time: PropTypes.string,
 	content: PropTypes.string,

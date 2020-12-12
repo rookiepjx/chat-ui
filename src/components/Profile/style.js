@@ -60,10 +60,9 @@ const Album = styled.div`
 
 // 相册图片
 const Photo = styled.img`
-	width: 120px;
-	height: 120px;
+	width: 80px;
+	height: 80px;
 	object-fit: cover;
-	/* margin: 4px; */
 `;
 
 const CloseIcon = styled(Icon).attrs({ opacity: 0.3 })`

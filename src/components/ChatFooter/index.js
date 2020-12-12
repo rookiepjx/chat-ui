@@ -29,7 +29,7 @@ function ChatFooter({ children, ...props }) {
 							onVisible={() => setEmojiActive(true)}
 							onHide={() => setEmojiActive(false)}
 						>
-							<Icon icon={smile} color={emojiActive?"":theme.gray} />
+							<Icon style={{cursor:"pointer"}} icon={smile} color={emojiActive?"":theme.gray} />
 						</Popover>
 						<Icon icon={microphone} />
 						<Button type="primary" shape="circle" size="46px">

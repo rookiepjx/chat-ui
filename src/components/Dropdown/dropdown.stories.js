@@ -12,19 +12,19 @@ export default {
 	component: Dropdown,
 };
 
-const dropdown = (
-	<d>
+export const dropdown = (
+	<>
 		<DropdownItem>
-			<Paragraph>个人信息</Paragraph>
+			<Paragraph>查看主页</Paragraph>
 		</DropdownItem>
 		<DropdownItem>
-			<Paragraph>设置中心</Paragraph>
+			<Paragraph>屏蔽好友</Paragraph>
 		</DropdownItem>
 		<Separator />
 		<DropdownItem>
-			<Paragraph type="danger">退出登录</Paragraph>
+			<Paragraph type="danger">删除好友</Paragraph>
 		</DropdownItem>
-	</d>
+	</>
 );
 
 export const Default = () => (
@@ -38,7 +38,9 @@ export const Default = () => (
 );
 
 export const AlignRight = () => (
-	<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+	<div
+		style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+	>
 		<Dropdown align="right" content={dropdown}>
 			<Icon opacity={0.5} icon={Options} />
 		</Dropdown>

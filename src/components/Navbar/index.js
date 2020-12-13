@@ -29,7 +29,7 @@ function Navbar({ ...prop }) {
 				<MenuItem to="/contacts" icon={faUser} />
 				<MenuItem to="/files" icon={faFolder} />
 				<MenuItem to="/notes" icon={faStickyNote} />
-				<MenuItem icon={faEllipsisH} />
+				<MenuItem to="/more" icon={faEllipsisH} />
 				<MenuItem
 					to="/setting"
 					icon={faCog}
@@ -46,7 +46,10 @@ function Navbar({ ...prop }) {
 function MenuItem({ icon, to, showBadge, ...prop }) {
 	// 获取path路由
 	const location = useLocation();
-	const active = !!matchPath(location.pathname, { path: to, exact: "/" });
+	const active = !!matchPath(location.pathname, {
+		path: to,
+		exact: to === "/",
+	});
 	return (
 		<StyledMenuItem active={active} {...prop}>
 			<Link to={to}>

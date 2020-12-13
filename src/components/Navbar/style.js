@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import  StyledAvatar  from "components/Avatar/style";
-import  StyledBadge from "components/Badge/style";
+import StyledAvatar from "components/Avatar/style";
+import StyledBadge from "components/Badge/style";
 import styled from "styled-components";
 import { activeBar } from "utils/mixins";
 
@@ -8,6 +8,8 @@ export const MenuIcon = styled(FontAwesomeIcon)`
 	color: white;
 	font-size: 24px;
 	opacity: ${({ active }) => (active ? 1 : 0.3)};
+	transition:.4s;
+	transform:scale(1);
 `;
 
 export const StyledMenuItem = styled.div`
@@ -20,10 +22,15 @@ export const StyledMenuItem = styled.div`
 						${activeBar()};
 						${({ active }) => (active ? "" : `&::before,&::after{height:0}`)};
 						&:hover {
-							${activeBar()};
+							::before,
+							::after {
+								height: 100%;
+							}
 							${StyledBadge} {
 								${MenuIcon} {
 									opacity: 1;
+									transition: 0.4s;
+									transform: scale(1.2);
 								}
 							}
 						}

@@ -7,11 +7,11 @@ import LabelContainer from "components/LabelContainer"
 // 2.隐藏原生radio(因为没有缩放动画)
 // 3.通过伪元素实现radio选项
 
-function Radio({ children, name, ...props }) {
+function Radio({ children, name,checked=false, ...props }) {
 	return (
 		<StyledRadio {...props}>
 			{children}
-			<RadioButton name={name} />
+			<RadioButton checked={checked} name={name} />
 			<Circle />
 		</StyledRadio>
 	);

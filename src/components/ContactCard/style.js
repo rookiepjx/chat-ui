@@ -23,6 +23,7 @@ const Name = styled(Paragraph).attrs({ size: "large" })`
 
 const Intro = styled(Paragraph).attrs({ type: "secondary" })`
 	grid-area: intro;
+	align-self:end;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;

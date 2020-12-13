@@ -2,18 +2,20 @@ import styled from "styled-components";
 
 const StyledPopover = styled.div`
 	position: relative;
-  display:flex;
-  justify-content:center;
+	display: flex;
+	justify-content: center;
 `;
 
 const Content = styled.div`
 	position: absolute;
 	box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.12);
 	padding: 12px 30px;
-  border-radius:100px;
-  bottom:calc(100% + 14px);
-  ${({visible}) => !visible && `display:none`};
-  ${({offset}) => offset && `transform:translate(${offset.x || 0},${offset.y || 0})`}
+	background: white;
+	border-radius: 100px;
+	bottom: calc(100% + 14px);
+	${({ visible }) => !visible && `display:none`};
+	${({ offset }) =>
+		offset && `transform:translate(${offset.x || 0},${offset.y || 0})`}
 `;
 
 const Triangle = styled.div`
@@ -27,8 +29,7 @@ const Triangle = styled.div`
 	bottom: calc(100% + 14px - 6px);
 	left: calc(50% - 6px);
 	${({ visible }) => !visible && `display:none`};
-	${({ offset }) =>
-		offset && `transform:translateY(${offset.y || 0})`}
+	${({ offset }) => offset && `transform:translateY(${offset.y || 0})`}
 `;
 
 const Target = styled.div``;

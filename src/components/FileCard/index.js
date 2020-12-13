@@ -39,7 +39,7 @@ function FileCard({ children, fileType, size, time, name, ...props }) {
 			<FileSize>{size}</FileSize>
 			<FileTime>{time}</FileTime>
 			<FileOptions content={<OptionsContent/>}>
-				<Icon icon={option} color={theme.gray4} />
+				<Icon style={{cursor:"pointer"}} icon={option} color={theme.gray4} />
 			</FileOptions>
 		</StyledFileCard>
 	);

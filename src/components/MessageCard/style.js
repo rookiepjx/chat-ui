@@ -62,10 +62,10 @@ const StyledMessageCard = styled.div`
 		"message message message";
 	grid-template-columns: 64px 1fr 1fr;
 	row-gap: 16px;
-	transition: 0.2s;
+
 	&:hover {
 		box-shadow: 0 22px 48px 0 rgba(0, 0, 0, 0.1);
-		${activeBar({ barWidth: "4px", shadowWidth: "14px" })}
+		${activeBar({ barWidth: "4px", shadowWidth: "14px" })};
       background-color:${({ theme }) => theme.darkPurple};
       ${Name},${Time},${StatusText},${MessageText}{
         color:#fff;
@@ -75,7 +75,7 @@ const StyledMessageCard = styled.div`
       }
 
 				${StyledIcon}{
-					color:${({theme}) => theme.inactiveColorDark};
+					color:${({ theme }) => theme.inactiveColorDark};
 				}
 			
       overflow:hidden;
@@ -83,6 +83,7 @@ const StyledMessageCard = styled.div`
 
 	${StyledAvatar} {
 		grid-area: avatar;
+		align-self:center;
 	}
 `;
 

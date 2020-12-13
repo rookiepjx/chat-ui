@@ -4,6 +4,7 @@ import StyledSeparator from "components/Separator/style"
 const StyledDropdown = styled.div`
 	position: relative;
 	cursor: pointer;
+	z-index:100;
 `;
 
 const DropdownContainer = styled.div`

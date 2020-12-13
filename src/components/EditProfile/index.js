@@ -72,8 +72,10 @@ function EditProfile({ children, onCloseClick, onEdit, ...props }) {
 			<Input.Text label="昵称" />
 			<GenderAndRegion>
 				<Radio.Group label="性别">
-					<Radio name="gender">男</Radio>
-					<Radio name="gender">女</Radio>
+					<Radio checked name="gender">男</Radio>
+					<Radio name="gender">
+						女
+					</Radio>
 				</Radio.Group>
 				<LabelContainer label="地区">
 					<SelectGroup>

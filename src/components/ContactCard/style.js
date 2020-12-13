@@ -16,10 +16,16 @@ const StyledContactCard = styled.div`
 
 const Name = styled(Paragraph).attrs({ size: "large" })`
 	grid-area: name;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 `;
 
 const Intro = styled(Paragraph).attrs({ type: "secondary" })`
 	grid-area: intro;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 `;
 
 export default StyledContactCard;

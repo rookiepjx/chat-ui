@@ -9,20 +9,29 @@ import Badge from "components/Badge";
 import Avatar from "components/Avatar";
 
 import image from "assets/images/face-male-1.jpg";
-import { faCog, faCommentDots, faEllipsisH, faFolder, faStickyNote, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+	faCog,
+	faCommentDots,
+	faEllipsisH,
+	faFolder,
+	faStickyNote,
+	faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import "styled-components/macro";
+import { Link, useLocation, matchPath } from "react-router-dom";
 
-function Navbar({...prop}) {
-  return (
+function Navbar({ ...prop }) {
+	return (
 		<StyledNavbar {...prop}>
 			<Avatar src={image} status="online" />
 			<StyledMenuItems>
-				<MenuItem active="true" showBadge icon={faCommentDots} />
-				<MenuItem icon={faUser} />
-				<MenuItem icon={faFolder} />
-				<MenuItem icon={faStickyNote} />
+				<MenuItem to="/" showBadge icon={faCommentDots} />
+				<MenuItem to="/contacts" icon={faUser} />
+				<MenuItem to="/files" icon={faFolder} />
+				<MenuItem to="/notes" icon={faStickyNote} />
 				<MenuItem icon={faEllipsisH} />
 				<MenuItem
+					to="/setting"
 					icon={faCog}
 					css={`
 						align-self: end;
@@ -34,17 +43,20 @@ function Navbar({...prop}) {
 }
 
 // 菜单项只属于侧导航，所以和Navbar写在一起
-function MenuItem({icon,active,showBadge,...prop}){
-  return (
+function MenuItem({ icon, to, showBadge, ...prop }) {
+	// 获取path路由
+	const location = useLocation();
+	const active = !!matchPath(location.pathname, { path: to, exact: "/" });
+	return (
 		<StyledMenuItem active={active} {...prop}>
-			<a href="/">
+			<Link to={to}>
 				<Badge show={showBadge}>
-					<MenuIcon active={active} icon={icon}/>
+					<MenuIcon active={active} icon={icon} />
 				</Badge>
-			</a>
+			</Link>
 		</StyledMenuItem>
 	);
 }
 
 export default Navbar;
-export {MenuItem}
+export { MenuItem };

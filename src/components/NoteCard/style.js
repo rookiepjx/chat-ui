@@ -19,14 +19,20 @@ const NoteImage = styled.img`
   object-fit:cover;
 `;
 
-const NoteName = styled(Heading).attrs({level:2})`
+const NoteName = styled(Heading).attrs({ level: 2 })`
 	grid-area: name;
-  align-self:center;
+	align-self: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 `;
 
 const NoteContent = styled(Paragraph).attrs({ size: "small" })`
 	grid-area: content;
-  align-self:center;
+	align-self: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 `;
 
 const NoteTime = styled(Paragraph).attrs({ type: "secondary" })`

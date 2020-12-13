@@ -1,19 +1,12 @@
 import styled from "styled-components";
-import StyledMessageCard from "components/MessageCard/style"
-import StyledFilter from "components/Filter/style";
+import StyledMessageCard from "components/MessageCard/style";
 
-const StyledMessageList = styled.div`
-${StyledFilter}{
-  padding:20px;
-}
-
-`;
+const StyledMessageList = styled.div``;
 const ListContainer = styled.div`
-  ${StyledMessageCard}{
-    margin-bottom:4px;
-  }
+	${StyledMessageCard} {
+		margin-bottom: 4px;
+	}
 `;
 
 export default StyledMessageList;
-export {ListContainer}
-
+export { ListContainer };

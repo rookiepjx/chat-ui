@@ -11,7 +11,7 @@ const StyledFileCard = styled.div`
 	grid-template-areas:
 		"icon name options"
 		"icon size time";
-	grid-template-columns: 74px 1fr 1fr;
+	grid-template-columns: 74px 2fr 1fr;
 	align-items: center;
 `;
 
@@ -23,6 +23,9 @@ const FileIcon = styled(Icon).attrs({ width: 60, height: 60 })`
 const FileName = styled(Heading).attrs({ level: 2 })`
 	grid-area: name;
 	align-self: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 `;
 
 const FileSize = styled(Paragraph).attrs({ type: "secondary" })`

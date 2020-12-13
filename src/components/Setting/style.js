@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const StyledSetting = styled.div``;
+const StyledSetting = styled.div`
+padding:50px;
+`;
 
 const StyledSettingItem = styled.div``;
 

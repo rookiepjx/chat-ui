@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const StyledChatApp = styled.div`
 	position: relative;
@@ -10,8 +10,7 @@ const StyledChatApp = styled.div`
 
 const Nav = styled.nav`
 	flex-shrink: 0;
-  position: relative;
-
+	position: relative;
 `;
 
 const SideBar = styled.aside`
@@ -28,8 +27,14 @@ const Content = styled.div`
 `;
 
 const Drawer = styled.div`
-	/* width: 0; */
+	width: 0;
 	max-width: 310px;
+
+	${({ show }) =>
+		show &&
+		css`
+			width: inherit;
+		`}
 `;
 
 export default StyledChatApp;

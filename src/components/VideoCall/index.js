@@ -22,7 +22,7 @@ import Avatar from "components/Avatar";
 import "styled-components/macro";
 import Paragraph from "components/Paragraph";
 
-function VideoCall({ children, ...props }) {
+function VideoCall({ children,onHangOff, ...props }) {
 	const [fullScreen, setFullScreen] = useState(true);
 	if (fullScreen) {
 		return (
@@ -34,7 +34,7 @@ function VideoCall({ children, ...props }) {
 					<Operation>
 						<FontAwesomeIcon icon={faMicrophone} />
 					</Operation>
-					<Operation type="hangoff">
+					<Operation type="hangoff" onClick={onHangOff}>
 						<FontAwesomeIcon icon={faPhoneSlash} />
 					</Operation>
 					<Operation>

@@ -7,10 +7,10 @@ import Emoji from "components/Emoji";
 import ChatFooter from "components/ChatFooter";
 
 /* eslint-disable jsx-a11y/accessible-emoji */
-function Conversation({ children, ...props }) {
+function Conversation({ children,onAvatarClick,onVideoClick, ...props }) {
 	return (
 		<StyledConversation {...props}>
-			<TitleBar />
+			<TitleBar onAvatarClick={onAvatarClick} onVideoClick={onVideoClick} />
 			<ConversationList>
 				<MessageBubble time="下午 14:30">
 					Hi,最近在忙什么呢？<Emoji label="smile">😜</Emoji>

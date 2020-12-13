@@ -14,12 +14,14 @@ import Icon from "components/Icon";
 import { ReactComponent as ArrowMenuLeft } from "assets/icon/arrowMenuLeft.svg";
 import { ReactComponent as closeCircle } from "assets/icon/closeCircle.svg";
 import face from "assets/images/face-male-1.jpg"
+import { useHistory } from "react-router-dom";
 
 function BlockedList({children,...props}) {
+  const history = useHistory()
   return (
 		<StyledBlockedList {...props}>
 			<BlockedTitle>
-				<Icon icon={ArrowMenuLeft} style={{cursor:"pointer"}} />
+				<Icon icon={ArrowMenuLeft} style={{cursor:"pointer"}} onClick={() => history.goBack()} />
 				<Text size="xlarge">已屏蔽好友列表</Text>
 			</BlockedTitle>
       <FriendsList>

@@ -14,11 +14,18 @@ import {dropdown} from "components/Dropdown/dropdown.stories"
 
 function TitleBar({
 	children,
+	onAvatarClick,
+	onVideoClick,
 	...props
 }) {
 	return (
 		<StyledTitleBar {...props}>
-			<Avatar src={face1} status="offline" />
+			<Avatar
+				onClick={onAvatarClick}
+				src={face1}
+				status="offline"
+				style={{ cursor: "pointer" }}
+			/>
 			<Title>
 				<Paragraph size="large">彭佳鑫</Paragraph>
 				<Paragraph type="secondary">
@@ -27,7 +34,7 @@ function TitleBar({
 				</Paragraph>
 			</Title>
 			<Actions>
-				<Icon opacity={0.3} icon={call} />
+				<Icon opacity={0.3} icon={call} onClick={onVideoClick} />
 				<Icon opacity={0.3} icon={camera} />
 				<Dropdown align="right" content={dropdown}>
 					<Icon opacity={0.3} icon={options} />

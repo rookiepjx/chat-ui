@@ -18,10 +18,11 @@ function TitleBar({
 	onAvatarClick,
 	onVideoClick,
 	style,
+	animationProps,
 	...props
 }) {
 	return (
-			<StyledTitleBar{...props}>
+			<StyledTitleBar style={{...style,...animationProps}} {...props}>
 				<Avatar
 					onClick={onAvatarClick}
 					src={face1}

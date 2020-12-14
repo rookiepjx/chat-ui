@@ -24,7 +24,7 @@ export const Default = () => {
 };
 
 // 尺寸头像
-export const Sizes = () => {
+export const Size = () => {
 	return (
 		<div className="row">
 			<Avatar src={image1} />

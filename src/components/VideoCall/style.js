@@ -42,8 +42,8 @@ const Operation = styled(Button).attrs({ size: "64px", shape: "circle" })`
 	color: #fff;
 	justify-self: center;
 
-	background-color: ${({ theme, type }) =>
-		type === "hangoff" ? theme.red2 : theme.grayDark2};
+	background-color: ${({ theme, _type }) =>
+		_type === "hangoff" ? theme.red2 : theme.grayDark2};
 `;
 
 const Self = styled(Avatar)`

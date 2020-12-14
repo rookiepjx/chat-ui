@@ -12,6 +12,7 @@ import note3 from "assets/images/note-3.jpg";
 import note4 from "assets/images/note-4.jpg";
 import note5 from "assets/images/note-5.jpg";
 
+
 export const contactList = [
 	{ name: "王俊凯", intro: "你好，我是王俊凯", avatar: face1 },
 	{ name: "王源", intro: "你好，我是王源", avatar: face2 },
@@ -24,85 +25,87 @@ export const contactList = [
 ];
 
 export const fileList = [
-					{
-						name: "《JavaScript高级程序设计》",
-						size: "5.2MB",
-						type: "pdf",
-						pdf: "2020-12-01",
-					},
-					{
-						name: "小组项目压缩文件",
-						size: "5.2MB",
-						type: "zip",
-						time: "2020-12-01",
-					},
-					{
-						name: "魅力三亚",
-						size: "5.2MB",
-						type: "image",
-						time: "2020-12-01",
-					},
-					{
-						name: "黄山日出",
-						size: "5.2MB",
-						type: "image",
-						time: "2020-12-01",
-					},
-					{
-						name: "小组项目展示PPT",
-						size: "5.2MB",
-						type: "ppt",
-						time: "2020-12-01",
-					},
-					{
-						name: "安全教育主题班会",
-						size: "5.2MB",
-						type: "ppt",
-						time: "2020-12-01",
-					},
-					{
-						name: "2020年度三好学生名单",
-						size: "5.2MB",
-						type: "excel",
-						time: "2020-12-01",
-					},
-					{
-						name: "期末项目答辩文稿",
-						size: "5.2MB",
-						type: "word",
-						time: "2020-12-01",
-					},
-				];
+	{
+		name: "《JavaScript高级程序设计》",
+		size: "5.2MB",
+		type: "pdf",
+		pdf: "2020-12-01",
+	},
+	{
+		name: "小组项目压缩文件",
+		size: "5.2MB",
+		type: "zip",
+		time: "2020-12-01",
+	},
+	{
+		name: "魅力三亚",
+		size: "5.2MB",
+		type: "image",
+		time: "2020-12-01",
+	},
+	{
+		name: "黄山日出",
+		size: "5.2MB",
+		type: "image",
+		time: "2020-12-01",
+	},
+	{
+		name: "小组项目展示PPT",
+		size: "5.2MB",
+		type: "ppt",
+		time: "2020-12-01",
+	},
+	{
+		name: "安全教育主题班会",
+		size: "5.2MB",
+		type: "ppt",
+		time: "2020-12-01",
+	},
+	{
+		name: "2020年度三好学生名单",
+		size: "5.2MB",
+		type: "excel",
+		time: "2020-12-01",
+	},
+	{
+		name: "期末项目答辩文稿",
+		size: "5.2MB",
+		type: "word",
+		time: "2020-12-01",
+	},
+];
 
 export const noteList = [
-					{
-						name: "英语笔记",
-						image: note1,
-						content: "Hello everyone ! This is my first English learning note!",
-						time: "2020-12-01",
-					},
-					{
-						name: "读书笔记",
-						image: note2,
-						content: "在这里记录我在阅读《双城记》的笔记吧!",
-						time: "2020-12-01",
-					},
-					{
-						name: "前端笔记",
-						image: note3,
-						content: "在这里记录我在学习前端知识的笔记吧!",
-						time: "2020-12-01",
-					},
-					{
-						name: "后端笔记",
-						image: note4,
-						content: "在这里记录我在学习后端知识的笔记吧!",
-						time: "2020-12-01",
-					},
-					{
-						name: "高数笔记",
-						image: note5,
-						content: "在这里记录我在学习高数知识的笔记吧!",
-						time: "2020-12-01",
-					},
-				];
+	{
+		name: "英语笔记",
+		image: note1,
+		content: "Hello everyone ! This is my first English learning note!",
+		time: "2020-12-01",
+	},
+	{
+		name: "读书笔记",
+		image: note2,
+		content: "在这里记录我在阅读《双城记》的笔记吧!",
+		time: "2020-12-01",
+	},
+	{
+		name: "前端笔记",
+		image: note3,
+		content: "在这里记录我在学习前端知识的笔记吧!",
+		time: "2020-12-01",
+	},
+	{
+		name: "后端笔记",
+		image: note4,
+		content: "在这里记录我在学习后端知识的笔记吧!",
+		time: "2020-12-01",
+	},
+	{
+		name: "高数笔记",
+		image: note5,
+		content: "在这里记录我在学习高数知识的笔记吧!",
+		time: "2020-12-01",
+	},
+];
+
+

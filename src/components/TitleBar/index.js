@@ -10,7 +10,8 @@ import {ReactComponent as call} from "assets/icon/call.svg"
 import { ReactComponent as camera } from "assets/icon/camera.svg";
 import { ReactComponent as options } from "assets/icon/options.svg";
 import face1 from "assets/images/face-male-1.jpg";
-import {dropdown} from "components/Dropdown/dropdown.stories"
+import Separator from "components/Separator";
+import {DropdownItem } from "components/Dropdown/style"
 
 function TitleBar({
 	children,
@@ -43,6 +44,21 @@ function TitleBar({
 		</StyledTitleBar>
 	);
 }
+
+const dropdown = (
+	<>
+		<DropdownItem>
+			<Paragraph>查看主页</Paragraph>
+		</DropdownItem>
+		<DropdownItem>
+			<Paragraph>屏蔽好友</Paragraph>
+		</DropdownItem>
+		<Separator />
+		<DropdownItem>
+			<Paragraph type="danger">删除好友</Paragraph>
+		</DropdownItem>
+	</>
+);
 
 TitleBar.propTypes = {
 	children: PropTypes.any,

@@ -42,7 +42,7 @@ export const Size = () => {
 export const ChildrenNode = () => {
 	return (
 		<div className="row">
-			<Badge count={2}>
+			<Badge show>
 				<div style={{padding:"4px",borderRadius:"4px",background:"skyblue",
 			color:"white"}}>New message</div>
 			</Badge>

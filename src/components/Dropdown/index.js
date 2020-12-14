@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import StyledDropdown, { DropdownContainer } from "./style";
 
+
 function Dropdown({ children, align = "left", content, ...props }) {
 	const [visible, setVisible] = useState(false);
 	return (

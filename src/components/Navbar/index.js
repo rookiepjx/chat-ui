@@ -44,7 +44,7 @@ function Navbar({ ...prop }) {
 
 // 菜单项只属于侧导航，所以和Navbar写在一起
 function MenuItem({ icon, to, showBadge, ...prop }) {
-	// 获取path路由
+	// 获取路由信息
 	const location = useLocation();
 	const active = !!matchPath(location.pathname, {
 		path: to,

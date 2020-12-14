@@ -11,7 +11,7 @@ import Icon from "components/Icon";
 import { ReactComponent as ArrowMenuRight } from "assets/icon/arrowMenuRight.svg";
 import Switch from "components/Switch";
 import Separator from "components/Separator";
-import { Link } from "react-router-dom";
+import { Link, BrowserRouter } from "react-router-dom";
 import "styled-components/macro";
 
 function Setting({ children, ...props }) {
@@ -31,15 +31,17 @@ function Setting({ children, ...props }) {
 				<SettingItem label="声音" />
 			</SettingGroup>
 			<SettingGroup title="隐私设置">
-				<Link
-					to="/setting/blocked"
-					css={`
-						text-decoration: none;
-						color: inherit;
-					`}
-				>
-					<SettingItem label="查看已屏蔽好友列表" type="menu" />
-				</Link>
+				<BrowserRouter>
+					<Link
+						to="/setting/blocked"
+						css={`
+							text-decoration: none;
+							color: inherit;
+						`}
+					>
+						<SettingItem label="查看已屏蔽好友列表" type="menu" />
+					</Link>
+				</BrowserRouter>
 			</SettingGroup>
 		</StyledSetting>
 	);

@@ -21,7 +21,7 @@ function BlockedList({children,...props}) {
   return (
 		<StyledBlockedList {...props}>
 			<BlockedTitle>
-				<Icon icon={ArrowMenuLeft} style={{cursor:"pointer"}} onClick={() => history.goBack()} />
+				<Icon icon={ArrowMenuLeft} style={{cursor:"pointer"}} onClick={() => history && history.goBack()} />
 				<Text size="xlarge">已屏蔽好友列表</Text>
 			</BlockedTitle>
       <FriendsList>

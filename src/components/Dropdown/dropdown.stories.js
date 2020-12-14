@@ -1,9 +1,10 @@
 import React from "react";
 import Dropdown from ".";
-import { DropdownItem } from "./style";
+
+import Icon from "components/Icon";
 import Paragraph from "components/Paragraph";
 import Separator from "components/Separator";
-import Icon from "components/Icon";
+import { DropdownItem } from "./style";
 
 import { ReactComponent as Options } from "assets/icon/options.svg";
 
@@ -12,7 +13,7 @@ export default {
 	component: Dropdown,
 };
 
-export const dropdown = (
+const dropdown = (
 	<>
 		<DropdownItem>
 			<Paragraph>查看主页</Paragraph>

@@ -34,7 +34,7 @@ function VideoCall({ children,onHangOff, ...props }) {
 					<Operation>
 						<FontAwesomeIcon icon={faMicrophone} />
 					</Operation>
-					<Operation type="hangoff" onClick={onHangOff}>
+					<Operation _type="hangoff" onClick={onHangOff}>
 						<FontAwesomeIcon icon={faPhoneSlash} />
 					</Operation>
 					<Operation>

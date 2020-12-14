@@ -1,4 +1,4 @@
-import styled,{css} from "styled-components";
+import styled from "styled-components";
 
 // label 当点击文字也可以触发radio
 const StyledRadio = styled.label`
@@ -34,28 +34,21 @@ const Circle = styled.span`
 	}
 `;
 
-const RadioButton = styled.input.attrs({ type: "radio" })`
-  width:0;
-  height:0;
-	opacity:0;
-	${({ checked }) =>
-		checked &&
-		css`
-			 {
-				${Circle}::after {
-					transform: scale(1);
-					opacity: 1;
-				}
-			}
-		`}
-  :checked + ${Circle}::after{
-    transform:scale(1);
-    opacity:1;
-  }
-  :not(:checked) + ${Circle}::after{
-    transform:scale(0);
-    opacity:0;
-  }
+const RadioButton = styled.input.attrs({
+	type: "radio",
+	defaultChecked: "true",
+})`
+	width: 0;
+	height: 0;
+	opacity: 0;
+	:checked + ${Circle}::after {
+		transform: scale(1);
+		opacity: 1;
+	}
+	:not(:checked) + ${Circle}::after {
+		transform: scale(0);
+		opacity: 0;
+	}
 `;
 
 const StyledRadioGroup = styled.div`

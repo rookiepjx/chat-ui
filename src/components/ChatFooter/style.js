@@ -1,7 +1,7 @@
 import styled from "styled-components";
-
-const StyledChatFooter = styled.div`
-	padding: 12px;
+import {animated} from "react-spring"
+const StyledChatFooter = styled(animated.div)`
+	padding: 20px;
 	width: 100%;
 `;
 

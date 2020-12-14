@@ -13,11 +13,12 @@ import { ReactComponent as options } from "assets/icon/options.svg";
 import {useTheme} from "styled-components"
 import Emoji from "components/Emoji";
 import { useState } from "react";
-function ChatFooter({ children, ...props }) {
+
+function ChatFooter({ children,animationProps,style,...props }) {
 	const theme = useTheme()
 	const [emojiActive, setEmojiActive] = useState(false)
 	return (
-		<StyledChatFooter {...props}>
+		<StyledChatFooter style={{...style,...animationProps}} {...props}>
 			<Input
 				placeholder="请输入想和对方说的话"
 				prefix={<Icon icon={clip} />}

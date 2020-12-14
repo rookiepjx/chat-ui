@@ -3,29 +3,43 @@ import PropTypes from "prop-types";
 import StyledMessageList, { ListContainer } from "./style";
 import FilterList from "components/FilterList";
 import MessageCard from "components/MessageCard";
-import face1 from "assets/images/face-male-1.jpg";
-
+import { useTrail, animated } from "react-spring";
+import { messageList } from "data/data";
 function MessageList({ children, ...props }) {
+	const length = messageList.length;
+	const animations = useTrail(length, {
+		transform: "translate3d(0,0,0)",
+		from: { transform: "translate3d(-50px,0,0)" },
+		config: {
+			mass: 0.8,
+			tension: 280,
+			friction: 20,
+		},
+		delay: 200,
+	});
 	return (
 		<StyledMessageList {...props}>
-			<FilterList options={["好友在线优先","最新消息优先"]} actionsLabel="新建会话">
+			<FilterList
+				options={["好友在线优先", "最新消息优先"]}
+				actionsLabel="新建会话"
+			>
 				<ListContainer>
-					{[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => {
-						return (
+					{messageList.map((item, index) => (
+						<animated.div key={index} style={animations[index]}>
 							<MessageCard
 								key={index}
-								name="彭佳鑫"
-								active={index === 0}
-								replied={index % 2 === 0}
-								avatarSrc={face1}
-								avatarStatus="online"
-								statusText="在线"
-								message="湖人总冠军"
-								time="3 小时前"
-								unreadCount={2}
+								name={item.name}
+								active={item.active}
+								replied={item.replied}
+								avatarSrc={item.avatarSrc}
+								avatarStatus={item.avatarStatus}
+								statusText={item.statusText}
+								message={item.message}
+								time={item.time}
+								unreadCount={item.unreadCount}
 							/>
-						);
-					})}
+						</animated.div>
+					))}
 				</ListContainer>
 			</FilterList>
 		</StyledMessageList>

@@ -12,6 +12,96 @@ import note3 from "assets/images/note-3.jpg";
 import note4 from "assets/images/note-4.jpg";
 import note5 from "assets/images/note-5.jpg";
 
+export const messageList = [
+	{
+		name: "易烊千玺",
+		active: true,
+		replied: true,
+		avatarSrc: face1,
+		avatarStatus: "online",
+		statusText: "在线",
+		message: "你好！我是易烊千玺！",
+		time: "1 小时前",
+		unreadCount: 2,
+	},
+	{
+		name: "吴亦凡",
+		active: false,
+		replied: true,
+		avatarSrc: face2,
+		avatarStatus: "online",
+		statusText: "在线",
+		message: "你好！我是吴亦凡！",
+		time: "1 小时前",
+		unreadCount: 2,
+	},
+	{
+		name: "陈伟霆",
+		active: false,
+		replied: true,
+		avatarSrc: face3,
+		avatarStatus: "online",
+		statusText: "在线",
+		message: "你好！我是陈伟霆！",
+		time: "1 小时前",
+		unreadCount: 2,
+	},
+	{
+		name: "张艺兴",
+		active: false,
+		replied: false,
+		avatarSrc: face4,
+		avatarStatus: "offline",
+		statusText: "离线",
+		message: "你好！我是张艺兴！",
+		time: "1 小时前",
+		unreadCount: 2,
+	},
+	{
+		name: "金晨",
+		active: false,
+		replied: true,
+		avatarSrc: face5,
+		avatarStatus: "online",
+		statusText: "在线",
+		message: "你好！我是金晨！",
+		time: "1 小时前",
+		unreadCount: 2,
+	},
+	{
+		name: "倪妮",
+		active: false,
+		replied: true,
+		avatarSrc: face6,
+		avatarStatus: "online",
+		statusText: "在线",
+		message: "你好！我是倪妮！",
+		time: "1 小时前",
+		unreadCount: 2,
+	},
+	{
+		name: "刘亦菲",
+		active: false,
+		replied: true,
+		avatarSrc: face7,
+		avatarStatus: "online",
+		statusText: "在线",
+		message: "你好！我是刘亦菲！",
+		time: "1 小时前",
+		unreadCount: 2,
+	},
+	{
+		name: "刘诗诗",
+		active: false,
+		replied: true,
+		avatarSrc: face8,
+		avatarStatus: "online",
+		statusText: "在线",
+		message: "你好！我是刘诗诗！",
+		time: "1 小时前",
+		unreadCount: 2,
+	},
+];
 
 export const contactList = [
 	{ name: "王俊凯", intro: "你好，我是王俊凯", avatar: face1 },
@@ -107,5 +197,3 @@ export const noteList = [
 		time: "2020-12-01",
 	},
 ];
-
-

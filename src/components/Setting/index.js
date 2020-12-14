@@ -11,27 +11,37 @@ import Icon from "components/Icon";
 import { ReactComponent as ArrowMenuRight } from "assets/icon/arrowMenuRight.svg";
 import Switch from "components/Switch";
 import Separator from "components/Separator";
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "styled-components/macro";
+import { useSpring,animated } from "react-spring";
 
-function Setting({ children, ...props }) {
+function Setting({ children,...props }) {
+	const animationProps = useSpring({
+		opacity: 1,
+		transform: "translate3d(0,0,0)",
+		from: { transform: "translate3d(100px,0,0)", opacity: 0 },
+		config: {
+			tension: 140,
+		},
+		delay: 200,
+	});
 	return (
 		<StyledSetting {...props}>
-			<SettingGroup title="账号设置">
-				<SettingItem
-					label="免密支付"
-					description="小额支付时免输入密码"
-				></SettingItem>
-				<SettingItem label="切换用户" type="menu" />
-			</SettingGroup>
-			<SettingGroup title="通用设置">
-				<SettingItem label="新消息通知" />
-				<SettingItem label="语音和视频通话提醒" />
-				<SettingItem label="显示通知详情" />
-				<SettingItem label="声音" />
-			</SettingGroup>
-			<SettingGroup title="隐私设置">
-				<BrowserRouter>
+			<animated.div style={animationProps}>
+				<SettingGroup title="账号设置">
+					<SettingItem
+						label="免密支付"
+						description="小额支付时免输入密码"
+					></SettingItem>
+					<SettingItem label="切换用户" type="menu" />
+				</SettingGroup>
+				<SettingGroup title="通用设置">
+					<SettingItem label="新消息通知" />
+					<SettingItem label="语音和视频通话提醒" />
+					<SettingItem label="显示通知详情" />
+					<SettingItem label="声音" />
+				</SettingGroup>
+				<SettingGroup title="隐私设置">
 					<Link
 						to="/setting/blocked"
 						css={`
@@ -41,8 +51,8 @@ function Setting({ children, ...props }) {
 					>
 						<SettingItem label="查看已屏蔽好友列表" type="menu" />
 					</Link>
-				</BrowserRouter>
-			</SettingGroup>
+				</SettingGroup>
+			</animated.div>
 		</StyledSetting>
 	);
 }

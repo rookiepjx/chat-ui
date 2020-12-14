@@ -11,6 +11,8 @@ const StyledChatApp = styled.div`
 const Nav = styled.nav`
 	flex-shrink: 0;
 	position: relative;
+
+	z-index: 100;
 `;
 
 const SideBar = styled.aside`
@@ -19,6 +21,11 @@ const SideBar = styled.aside`
 	min-width: 420px;
 	height: 100vh;
 	flex: 1;
+	> div {
+		will-change: transform, opacity;
+		position: absolute;
+		width: 100%;
+	}
 `;
 
 const Content = styled.div`
@@ -29,11 +36,18 @@ const Content = styled.div`
 const Drawer = styled.div`
 	width: 0;
 	max-width: 310px;
+	transform:translate3d(310px,0,0);
+	transition:1s;
+	opacity:0;
+	// 提升性能
+	will-change:width transform;
 
 	${({ show }) =>
 		show &&
 		css`
 			width: inherit;
+			transform:translate3d(0,0,0);
+			opacity:1;
 		`}
 `;
 

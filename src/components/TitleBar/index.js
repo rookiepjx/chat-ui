@@ -30,7 +30,7 @@ function TitleBar({
 					style={{ cursor: "pointer" }}
 				/>
 				<Title>
-					<Paragraph size="large">彭佳鑫</Paragraph>
+					<Paragraph size="large">李明</Paragraph>
 					<Paragraph type="secondary">
 						<Text>离线</Text>
 						<Text> • 最后阅读 3 小时前</Text>

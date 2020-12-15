@@ -6,6 +6,8 @@
 
 `yarn storybook`
 
+若图片无法预览，请开启代理访问
+
 ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/Snipaste_2020-12-15_15-04-18.jpg)
 
 ## 聊天界面预览
@@ -344,7 +346,7 @@ const animations = useTrail(数据集长度,{
    						<animated.div key={index} style={animations[index]}>
    							<MessageCard
    								key={index}
-   								name="彭佳鑫"
+   								name="李明"
    								active={index === 0}
    								replied={index % 2 === 0}
    								avatarSrc={face1}

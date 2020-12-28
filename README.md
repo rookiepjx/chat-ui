@@ -8,7 +8,7 @@
 
 若图片无法预览，请开启代理访问
 
-![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/Snipaste_2020-12-15_15-04-18.jpg)
+![](https://gitee.com/coderPjx/images/raw/master/images/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f726f6f6b6965706a782f696d6167652d6265642f696d672f536e6970617374655f323032302d31322d31355f31352d30342d31382e6a7067.jpg)
 
 ## 聊天界面预览
 
@@ -16,39 +16,39 @@
 
 - 消息列表
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/1.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/1.jpg)
 
 - 联系人列表
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/dwad.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/2.jpg)
 
 - 文件列表
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/3.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/3.jpg)
 
 - 笔记列表
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/4.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/4.jpg)
 
 - 设置页面
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/5.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/5.jpg)
 
 - 个人信息界面
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/6.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/6.jpg)
 
 - 屏蔽好友列表
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/fee.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/7.jpg)
 
 - 滑动抽屉界面
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/8.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/8.jpg)
 
 - 视频通话界面
 
-  ![](https://cdn.jsdelivr.net/gh/rookiepjx/image-bed/img/9.jpg)
+  ![](https://gitee.com/coderPjx/images/raw/master/images/9.jpg)
 
   
 
